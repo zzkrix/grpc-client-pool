@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package demo;
+
+option go_package = ".;demo";
+
+message AddRequest {
+  int64 n1 = 1;
+  int64 n2 = 2;
+}
+
+message AddResponse {
+  int64 result = 1;
+}
+
+message SubRequest {
+  int64 n1 = 1;
+  int64 n2 = 2;
+}
+
+message SubResponse {
+  int64 result = 1;
+}
+
+message HelloRequest{
+  string name = 1;
+}
+
+message HelloResponse{
+  string message = 1;
+}

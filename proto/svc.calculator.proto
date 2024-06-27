@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package demo;
+
+option go_package = ".;demo";
+
+import "message.proto";
+
+service Calculator {
+    rpc Add(AddRequest) returns(AddResponse){}
+    rpc Sub(SubRequest) returns(SubResponse){}
+}
+
